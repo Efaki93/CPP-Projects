@@ -1,3 +1,5 @@
+/*Kompiouteraki gia prakseis 2 arithmon me xrisi methodon*/
+
 #include <iostream>
 using namespace std;
 
@@ -14,7 +16,7 @@ int main()
 	printMenu();
 	cin>>choice;
 	
-	while (choice<1 || choice>4) //Δομή επανάληψης, σε περίπτωση που ο χρήστης δώσει λάθος επιλογή.
+	while (choice<1 || choice>4) //Domi epanalipsis, se periptosi pou o xristis dosei lathos epilogi.
 	{
 		cout<<"\nWrong choice!"<<endl;
 		cout<<"Enter your choice again (1-4): ";
@@ -37,7 +39,7 @@ int main()
 		case 3: cout<<"The product is: "<<mult(num1, num2);
 		break;
 		
-		case 4: if (num2!=0) //Έλεγχος αν ο διαιρέτης δεν είναι μηδέν.
+		case 4: if (num2!=0) //Elegxos an o diairetis den einai miden.
 				{ 
 					cout<<"The quotient is: "<<div(num1, num2);
 				}
@@ -51,7 +53,7 @@ int main()
 	return 0;
 }
 
-void printMenu() //Εκτύπωση του μενού
+void printMenu() //Ektiposi tou menu.
 {
 	cout<<"\t---------------------------------"<<endl;
 	cout<<"\t\t    Calculator"<<endl;
@@ -69,22 +71,22 @@ void printMenu() //Εκτύπωση του μενού
 	cout<<"\nGive your choice (1-4): ";
 }
 
-int add (int num1, int num2) //Μέθοδος για την πρόσθεση
+int add (int num1, int num2) //Methodos gia prosthesi.
 {
 	return num1+num2;
 }
 
-int sub (int num1, int num2) //Μέθοδος για την αφαίρεση
+int sub (int num1, int num2) //Methodos gia afairesi.
 {
 	return num1-num2;
 }
 
-int mult (int num1, int num2) //Μέθοδος για τον πολλαπλασιασμό
+int mult (int num1, int num2) //Methodos gia pollaplasiasmo.
 {
 	return num1*num2;
 }
 
-float div (float num1, float num2) //Μέθοδος για τη διαίρεση
+float div (float num1, float num2) //Methodos gia diairesi.
 {
 	return num1/num2;
 }
